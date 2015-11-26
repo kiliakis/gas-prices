@@ -1,0 +1,47 @@
+{
+  "name": "gas-prices",
+  "title": "Henry Hub Natural Gas Spot Price (Dollars per Million Btu)",
+  "license": "PDDL-1.0",
+  "resources": [
+    {
+      "name": "gas-prices-daily",
+      "path": "data/gas_prices_daily.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "description": "Date format is yyyy-mm-dd",
+            "type": "string"
+          },
+          {
+            "name": "Price (Dollars per Million Btu)",
+            "description": "",
+            "type": "Number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "gas-prices-monthly",
+      "path": "data/gas_prices_monthly.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "description": "Date format is yyyy-mm",
+            "type": "string"
+          },
+          {
+            "name": "Price (Dollars per Million Btu)",
+            "description": "",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ]
+}
